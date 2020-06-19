@@ -1,0 +1,48 @@
+<%-include("partials/header")%>
+<div class="addcontain">
+    <div class="row">
+        <div class="col-md-6">
+            <p class="addplace"><a href="/home/visited"><img class="arrowad" src="/img/arrow.svg" ></a>Add Place</p>
+            <img src="/img/travel-illustration.svg" width=653px height=598px>
+        </div>
+        <div class="col-md-5 coladd">
+            <div id="addoad" >
+                <p id="addcont">Add Details about the place where you have visited.</p>
+                <form name="addform" onsubmit="return addValidate()" class="formadd" action="/home" method="POST">
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" id="city" class="form-control controladd" name="city" >
+                    </div>
+                    <div class="form-group">
+                        <label>Photo URL</label>
+                        <input type="text" id="img" class="form-control controladd" name="imgurl"  >
+                    </div>
+                    <div class="form-group">
+                        <label>Few words about this place</label>
+                        <input type="text" id="desc"  class="form-control controladd-big" name="description"   >
+                    </div>
+                    <div class="form-group check-l">
+                        <div class="checklab">
+                            <input type="checkbox" value="true" id="check1" name="visited" class="checkadd checkbox" onclick="traveldisp()" >
+                            <label class="checklab">VISITED</label>
+                        </div> 
+                        <div class="checklab">
+                            <input type="checkbox" name="bucketList" id="check2" value="true" class="checkadd1 checkbox">
+                        </div>
+                        <label class="checklab">BUCKET-LIST</label>
+                    </div>
+                    <div class="form-group traveldate">
+                        <label>When did you travel here?</label>
+                        <input type="text" class="form-control  controladd" id="Travelbox"  name="travelDate">
+                    </div>
+                    <span class="error">All Fields are Required</span>
+                    <div class="form-group">
+                        <button class="btn btn-dark form-control float-right" id="controladd-but" type="submit">ADD PLACE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%-include("partials/footer")%>

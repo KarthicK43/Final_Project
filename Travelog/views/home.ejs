@@ -1,0 +1,44 @@
+<%- include("partials/header")%>
+    <div class="jumbo">
+        <div class="img-main">
+            <img id="img-cont" src="/img/home-illustration.svg">
+        </div>
+        <div class="main-bar text-white">
+            <p id="main-1">Sometimes, what matters is to pick your bags and get on a car and travel NON-STOP.</p>
+            <p id=main-2>Explore! The World is Not Enough</p>
+        </div>
+    </div>
+    <div class="navbarblue">
+        <a type="button" class="mode btn button1" href="/home/visited">MY VISITED PLACES</a>
+        <a type="button" class="mode btn button2" href="/home/bucket">MY BUCKET LIST</a>
+    </div>
+    <div class="main-content ">
+        <%if(Cmode){%>
+        <p id="visit" >My Visited Places <a type="button" href="/home/add" class="float-right btn" id="butplace">ADD PLACE</a></p>
+        <%}else{%>
+        <p id="visit" >My Bucket List <a type="button" href="/home/add" class="float-right btn" id="butplace">ADD PLACE</a></p>
+        <%}%>
+        <div class="row align-items-center"></div>    
+        <% if(places[0]){%>
+            <% places.forEach(function(place){%>
+                <a href="/home/<%=place._id%>/edit">
+                <div class="col-md-3 card-maker ">
+                    <div class="img-thumbnail">
+                        <img class=" card" src="<%=place.imgurl%>">
+                        <p class="text-center city-img" <%if(mode){%>style="padding-bottom:31px" <%}%>><%=place.city%></p>
+                        <%if(!mode){%>
+                        <p class="text-center date-img"><%=place.travelDate%></p>
+                        <%}%>
+                    </div>
+                   
+                </div>
+            </a>
+            <%})%>
+            <%}else{%>
+                <div class="text-center">
+                <h4>No Places to Show</h4>
+            </div>
+            <%}%>
+        </div>
+    </div>
+<%- include("partials/footer")%>

@@ -1,0 +1,54 @@
+<%-include("partials/header")%>
+<div class="addcontain">
+    <div class="row">
+        <div class="col-md-6">
+            <p class="addplace"><a href="/home/visited"><img class="arrowad" src="/img/arrow.svg" ></a>Edit Place Details</p>
+            <img src="/img/travel-illustration.svg" width=653px height=598px>
+        </div>
+        <div class="col-md-5 coladd">
+            <div id="addoad" >
+                <p id="addcont">Add Details about the place where you have visited.</p>
+            <form action="/home/visited/<%=place._id%>?_method=PUT" method="POST" class="formadd">
+                <div class="form-group">
+                    <label>City</label>
+                    <input type="text" class="form-control controladd" name="place[city]" value="<%=place.city%>" required>
+                </div>
+                <div class="form-group">
+                    <label>Photo URL</label>
+                    <input type="text" class="form-control controladd" name="place[imgurl]"  value="<%=place.imgurl%>" required>
+                </div>
+                <div class="form-group">
+                    <label>Few words about this place</label>
+                    <input type="text" class="form-control controladd-big" name="place[description]"  value="<%=place.description%>" required>
+                </div>
+                <div class="form-group check-l">
+                    <div class="checklab">
+                        <input type="checkbox" value="true" name="place[visited]" class="checkadd checkbox" onclick="traveldisp()" <%if(place.visited==true){%> checked <%}%>>
+                        <label class="checklab">VISITED</label>
+                    </div>
+                    
+                    <div class="checklab">
+                        <input type="checkbox" name="place[bucketList]" value="true" class="checkadd1 checkbox" <%if(place.bucketList==true){%> checked <%}%>>
+                    </div>
+                    <label class="checklab">BUCKET-LIST</label>
+                </div>
+                <div class="form-group traveldate">
+                    <label>When did you travel here?</label>
+                    <input type="text" class="form-control  controladd" name="place[travelDate]" id="Travelbox" value="<%=place.travelDate%>">
+                </div>
+                <!-- <span class="error">All fields are required</span> -->
+                <div class="form-group">
+                    <a href="/home" class="btn but-cancel align-items-right">Cancel</a>
+                    <button class="btn btn-dark form-control float-right" id="controladd-but" type="submit">Update Place</button>
+                </div>
+                <hr id="edit-hr">
+                <!-- <form action="/home/<%=place._id%>/delete?_method=delete" method="POST"> -->
+                    <a href="/home/<%=place._id%>/delete" class="btn but-del">Delete This Place</a>
+                <!-- </form> -->
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+
+<%-include("partials/footer")%>

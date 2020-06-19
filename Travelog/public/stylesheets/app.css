@@ -1,0 +1,325 @@
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.ulog{
+    background-color:#EEEEEE;
+}
+.unolog{
+    background-color:#0E1331;
+}
+.contain{
+    width: 50rem;
+    margin-left: 20rem;
+    margin-right:20rem;
+    margin-bottom: 8.688rem;
+    margin-top: 8.688rem;
+    background-color: white;
+}
+.formpad{
+    padding-left:3.5rem;
+    padding-top:2.5rem;
+    padding-bottom: 1.813rem;
+}
+.formlog{
+    margin:0 auto;
+}
+.controlog{
+    width:17.5rem;
+    height:2.625rem;
+    border-radius: 0px;
+    margin-bottom:0.625rem;
+    
+}
+button.form-control{
+    font-weight: bold;
+    background-color: #0E1331;
+    border:0px;
+}
+.bordercol{
+    border-left:1px solid #D9D9D9;
+}
+.log-row{
+    max-width: 50rem;
+    margin-right: 0px;
+    margin-left:0px;
+}
+nav{
+    font-size: 1rem;
+    background-color: #0E1331;
+}
+.logout{
+    margin-right: 3.875rem;
+    margin-left:1.875rem;
+}
+.user{
+    margin-right:1.875rem;
+}
+.slash{
+    font-size: 1.25rem;
+}
+.controladd{
+    width:27.75rem;
+    height:2.938rem;
+    border-radius: 0px;
+    border-width: 1PX;
+    
+}
+.controladd-big{
+    width:27.75rem;
+    height:7.603rem;
+    border-radius: 0px;
+}
+#controladd-but{
+    width:7.688rem;
+    height:2.188rem;
+    border-radius: 0px;
+    background-color: #0E1331;
+    font-size: 1rem;
+    font-weight:normal;
+}
+.containadd{
+    max-width:33.375rem;
+    height:47.563rem;
+    margin:0px auto;
+}
+.addcontain{
+    padding-right:7.063rem;
+    padding-left:5.875rem;
+    padding-top:3.875rem;
+    padding-bottom: 3.875rem;
+    font-weight:bold;
+    /* padding:3.125rem; */
+}
+.checkadd{
+    width:1.375rem;
+    height:1.374rem;
+}
+.checkadd1{
+    width:1.375rem;
+    height:1.374rem;
+    margin-left: 3.75rem;
+}
+.formadd{
+    margin:0px auto;
+    padding:2.75rem;
+}
+.coladd{
+    background-color: white;
+    /* padding-bottom: 2.75rem; */
+    margin-left:1.813rem;
+}
+#addcont{
+    font-size: 1.5rem;
+    color:#0E1331;
+    padding-top: 2.938rem;
+    padding-left:2.75rem;  
+    margin-bottom:0px; 
+}
+.checklab{
+    display: inline;
+    vertical-align: top;
+}
+.arrowad{
+    width:1.25rem; font-size: 25; height:1.313rem;margin-right:1.438rem;
+}
+.addplace{
+    font-size: 2rem; padding-bottom:5.313rem;
+}
+.main-bar{
+    margin-top:2.875rem;
+    padding-left: 0px;
+}
+#main-1{
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom:0px;
+    padding-top:3.125rem;
+}
+#main-2{
+    font-size: 1.875rem;
+    /* line-height: 2.1; */
+}
+#img-cont{
+    margin-left:107px;
+    margin-top: 18px;
+}
+.img-main{
+    width:35%;
+    float:left;
+}
+.main-bar{
+margin-top:0px;
+}
+.jumbo{
+    width:100%;
+    height:183px;
+    padding:0px;
+    background-color:#0E1331;
+}
+.navbarblue{
+    background-color: #245A99;
+    margin-top:6px;
+    height:49px;
+    vertical-align: middle;
+    
+}
+.button1:hover{
+    color:#55BD84;
+    background-color: #245A99;
+}
+.button2:hover{
+    color: #55BD84;
+    background-color: #245A99;
+}
+.selected{
+    color: white;
+}
+div a.button1{
+    color: #FFFFFF;
+}
+a.button2{
+    color: white;
+}
+.button1:focus{
+    box-shadow: 0 0 0 0px black;
+    outline: none;
+}
+.button2:focus{
+    box-shadow: 0 0 0 0px black;
+    outline: none;
+}
+.but-cancel:focus{
+    box-shadow: 0 0 0 0px black;
+    outline: none;
+}
+.but-del:focus{
+    box-shadow: 0 0 0 0px black;
+    outline: none;
+}
+.button1{
+    background-color: #245A99;
+    margin-left:118px;
+    /* color: #55BD84; */
+    border:0px;
+    font-weight: bold;
+    height:100%;
+    padding-top:13px;
+    outline-style: none;
+    box-sizing:none;
+    transition: none;
+    -moz-user-focus: none;
+
+}
+.button2{
+    transition: none;
+    box-sizing:none;
+    height:100%;
+    padding-top:13px;
+    background-color: #245A99;
+    margin-left:65px;
+    /* color: #55BD84; */
+    border:0px;
+    outline:none;
+    font-weight: bold;
+}
+.main-content{
+    margin-left: 119px;
+    margin-right:119px;
+    width:1204px;
+    margin-top: 2rem;
+}
+#butplace{
+    width:7.688rem;
+    height:2.188rem;
+    border-radius: 0px;
+    background-color: #0E1331;
+    font-size: 1rem;
+    font-weight:normal;
+    border:0px;
+    color:white;
+    
+}
+#visit{
+    color:#222C6A;
+    font-size: 26px;
+}
+.but-cancel{
+    color:#999999;
+    margin-left:219px;
+}
+#edit-hr{
+    height:1px;
+    color:#979797;
+}
+.but-del:hover{
+    color:#D0021B;
+    
+}
+.but-del{
+    color:#D0021B;
+    font-weight: bold;
+}
+.navbar-brand{
+    margin-left: 34px;
+    margin-top: 9px;
+}
+.img-nav{
+    height:36px;
+    width:86px;
+}
+.img-thumbnail{
+    border:0px;
+    box-shadow: none;
+    padding:0px;
+    outline: none;
+}
+.card-maker{
+    display:inline-block;
+    max-width:285px;
+    padding:0px;
+    padding-right:8px;
+    margin-right: 12px;
+    height:351px;
+    margin-bottom: 38px;
+}
+.card{
+    border-radius: 0px;
+     height:306px;
+     width:100%;
+     padding:22px;
+     border:0px;
+     padding-bottom:0.625rem
+   
+}
+.city-img{
+font-size: 1.25rem;
+font-weight: bold;
+color:#222C6A;
+margin-bottom: 0px;
+
+}
+.date-img{
+    font-size: 14px;
+    color:#737FC7;
+    margin-bottom: 0px;
+    padding-bottom: 13px;
+    font-weight: normal;
+    border-radius: 0px;
+}
+.img-thumbnail{
+    border-radius: 0px;
+
+}
+.traveldate{
+    display: none;
+}
+.error{
+    display: none;
+}
+.errorshow{
+    margin-bottom:13px;
+    display: block;
+    color:#D0021B;
+    font-size: 14px;
+    font-weight: bold;
+}
