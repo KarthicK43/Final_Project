@@ -1,3 +1,4 @@
+// Invoking packages
 var express = require("express");
 var app=express();
 var request = require("request"); 
@@ -9,7 +10,6 @@ var methodOverride=require("method-override");
 // models
 var Place = require("./models/places");
 var User = require("./models/users");
-// var Userdet=require("./models/userdet");
 // Routes
 var authRoute=require("./routes/authenticate");
 var mainRoute=require("./routes/places");
@@ -37,10 +37,10 @@ app.use(function(req,res,next){
 	res.locals.curuser=req.user;
 	next();
 });
-
+// Using Routes
 app.use(mainRoute);
 app.use(authRoute);
-
+// Listener
 app.listen(process.env.PORT||2000,process.env.IP,function(){
     console.log("Server Started");
 })

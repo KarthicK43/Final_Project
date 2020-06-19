@@ -54,7 +54,7 @@ router.get("/home/:mode",isLoggedIn,function(req,res){
 				console.log(err);
 			}
 			else{
-				res.render("home",{places:bucketPlaces,mode:true,Cmode:false})			
+				res.render("home",{places:bucketPlaces,mode:true})			
 			}
 		})
     }
@@ -64,7 +64,7 @@ router.get("/home/:mode",isLoggedIn,function(req,res){
 				console.log(err);
 			}
 			else{
-				res.render("home",{places:visitedPlaces,mode:false,Cmode:true})
+				res.render("home",{places:visitedPlaces,mode:false})
 			}
 		})
 	}

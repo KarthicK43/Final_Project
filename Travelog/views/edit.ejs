@@ -36,15 +36,12 @@
                     <label>When did you travel here?</label>
                     <input type="text" class="form-control  controladd" name="place[travelDate]" id="Travelbox" value="<%=place.travelDate%>">
                 </div>
-                <!-- <span class="error">All fields are required</span> -->
                 <div class="form-group">
                     <a href="/home" class="btn but-cancel align-items-right">Cancel</a>
                     <button class="btn btn-dark form-control float-right" id="controladd-but" type="submit">Update Place</button>
                 </div>
                 <hr id="edit-hr">
-                <!-- <form action="/home/<%=place._id%>/delete?_method=delete" method="POST"> -->
                     <a href="/home/<%=place._id%>/delete" class="btn but-del">Delete This Place</a>
-                <!-- </form> -->
             </form>
         </div>
         </div>

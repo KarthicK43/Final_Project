@@ -9,11 +9,11 @@
         </div>
     </div>
     <div class="navbarblue">
-        <a type="button" class="mode btn button1" href="/home/visited">MY VISITED PLACES</a>
-        <a type="button" class="mode btn button2" href="/home/bucket">MY BUCKET LIST</a>
+        <a type="button" class="mode btn button1 <%if(!mode){%> selected <%}else{%> unselected <%}%>" href="/home/visited">MY VISITED PLACES</a>
+        <a type="button" class="mode btn button2 <%if(mode){%> selected <%}else{%> unselected <%}%>" href="/home/bucket">MY BUCKET LIST</a>
     </div>
     <div class="main-content ">
-        <%if(Cmode){%>
+        <%if(!mode){%>
         <p id="visit" >My Visited Places <a type="button" href="/home/add" class="float-right btn" id="butplace">ADD PLACE</a></p>
         <%}else{%>
         <p id="visit" >My Bucket List <a type="button" href="/home/add" class="float-right btn" id="butplace">ADD PLACE</a></p>

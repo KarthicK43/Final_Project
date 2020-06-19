@@ -1,6 +1,7 @@
 body{
     font-family: 'IBM Plex Sans', sans-serif;
 }
+/* Login/Register */
 .ulog{
     background-color:#EEEEEE;
 }
@@ -43,6 +44,7 @@ button.form-control{
     margin-right: 0px;
     margin-left:0px;
 }
+/* Navbar */
 nav{
     font-size: 1rem;
     background-color: #0E1331;
@@ -57,6 +59,7 @@ nav{
 .slash{
     font-size: 1.25rem;
 }
+/* Add place */
 .controladd{
     width:27.75rem;
     height:2.938rem;
@@ -88,7 +91,6 @@ nav{
     padding-top:3.875rem;
     padding-bottom: 3.875rem;
     font-weight:bold;
-    /* padding:3.125rem; */
 }
 .checkadd{
     width:1.375rem;
@@ -125,6 +127,7 @@ nav{
 .addplace{
     font-size: 2rem; padding-bottom:5.313rem;
 }
+/* Home page */
 .main-bar{
     margin-top:2.875rem;
     padding-left: 0px;
@@ -137,7 +140,6 @@ nav{
 }
 #main-2{
     font-size: 1.875rem;
-    /* line-height: 2.1; */
 }
 #img-cont{
     margin-left:107px;
@@ -163,22 +165,19 @@ margin-top:0px;
     vertical-align: middle;
     
 }
-.button1:hover{
+.selected:hover{
     color:#55BD84;
     background-color: #245A99;
 }
-.button2:hover{
-    color: #55BD84;
+.unselected:hover{
+    color:white;
     background-color: #245A99;
 }
 .selected{
     color: white;
 }
-div a.button1{
-    color: #FFFFFF;
-}
-a.button2{
-    color: white;
+.unselected{
+    color:#55BD84;
 }
 .button1:focus{
     box-shadow: 0 0 0 0px black;
@@ -199,7 +198,6 @@ a.button2{
 .button1{
     background-color: #245A99;
     margin-left:118px;
-    /* color: #55BD84; */
     border:0px;
     font-weight: bold;
     height:100%;
@@ -217,7 +215,6 @@ a.button2{
     padding-top:13px;
     background-color: #245A99;
     margin-left:65px;
-    /* color: #55BD84; */
     border:0px;
     outline:none;
     font-weight: bold;
@@ -228,6 +225,7 @@ a.button2{
     width:1204px;
     margin-top: 2rem;
 }
+/*Edit place */
 #butplace{
     width:7.688rem;
     height:2.188rem;
@@ -259,6 +257,7 @@ a.button2{
     color:#D0021B;
     font-weight: bold;
 }
+/* Navbar */
 .navbar-brand{
     margin-left: 34px;
     margin-top: 9px;
@@ -267,6 +266,7 @@ a.button2{
     height:36px;
     width:86px;
 }
+/* Home Page */
 .img-thumbnail{
     border:0px;
     box-shadow: none;
@@ -310,9 +310,11 @@ margin-bottom: 0px;
     border-radius: 0px;
 
 }
+/* visited checking */
 .traveldate{
     display: none;
 }
+/* Error Messages */
 .error{
     display: none;
 }
