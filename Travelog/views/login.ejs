@@ -6,17 +6,18 @@
     </div>
     <div class="row log-row">
         <div class="col-md-6 formpad">            
-            <form class="formlog controlog" action="/login/user" method="POST">
+            <form class="formlog controlog" name="logform" onsubmit="return logValidate()" action="/login/user" method="POST">
                 <span><h3>Login</h3></span>
                 <div class="form-group">
-                    <input class="form-control controlog" type="text" placeholder="Username" name="username" required>
+                    <input class="form-control controlog" type="text" placeholder="Username" name="username">
                 </div>
                 <div class="form-group">
-                    <input class="form-control controlog"  type="password" placeholder="Password" name="password" required>
+                    <input class="form-control controlog"  type="password" placeholder="Password" name="password">
                 </div>
                 <% if(logError){%>
                     <span class="errorshow">Incorrect Username or Password</span>
                 <%}%>
+            <span class="error" id="errormsglog">All Fields are Required</span>
                 <div class="form-group">
                     <button type="submit" class="btn btn-dark form-control controlog">
                         LOG IN

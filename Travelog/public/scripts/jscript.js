@@ -11,6 +11,24 @@ function traveldisp(){
     }
 }
 
+function logValidate(){
+    var un=document.logform.username.value;
+    var pw=document.logform.password.value;
+    var er=document.querySelector("#errormsglog")
+    if((un==""||un==null)||(pw==""||pw==null))
+    {
+        er.classList.remove("error");
+        er.classList.add("errorshow");
+        return false;
+    }
+    else{
+        er.classList.remove("errorshow");
+        er.classList.add("error");
+        return true
+
+    }
+}
+
 function regValidate(){
     var un=document.regform.username.value;
     var pw=document.regform.password.value;
