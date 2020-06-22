@@ -17,8 +17,9 @@ function regValidate(){
     var yn=document.regform.yname.value;
     var ph=document.regform.phone.value;
     var em=document.regform.email.value;
+    var phoneno = /^\d{10}$/;
     var er=document.querySelector("#errormsg")
-    if((un==""||un==null)||(pw==""||pw==null)||(yn==""||yn==null)||(ph==""||ph==null)||(em==""||em==null))
+    if((un==""||un==null)||(pw==""||pw==null)||(yn==""||yn==null)||(ph==""||ph==null||isNaN(ph)||(!ph.match(phoneno)))||(em==""||em==null))
     {
         er.classList.remove("error");
         er.classList.add("errorshow");
