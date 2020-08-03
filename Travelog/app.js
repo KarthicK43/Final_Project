@@ -14,7 +14,8 @@ var User = require("./models/users");
 var authRoute=require("./routes/authenticate");
 var mainRoute=require("./routes/places");
 // configs
-mongoose.connect("mongodb+srv://KarthicK:Mustang43@cluster0.jgwwr.mongodb.net/travelog?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false});
+var url=process.env.DBURL || "mongodb://localhost/travelog";
+mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false});
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine","ejs");
 app.use(express.static(__dirname + "/public"))
